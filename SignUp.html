@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/6cd12173d5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/SignUp.css" />
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      $(".toggle").click(function () {
+        $(".header1").slideToggle();
+      });
+    });
+  </script>
+    <title>Đăng ký</title>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function() {
+          $(".user").blur(function() {
+              if (document.getElementById('user-id').value == "") {
+                  alert("Bạn chưa nhập Tài Khoản mời bạn nhập vào");
+              }
+          })
+          $(".password").blur(function() {
+              if (document.getElementById('password-id').value == "") {
+                  alert("Bạn chưa nhập Mật Khẩu mời bạn nhập vào");
+              }
+          })
+          $(".password1").blur(function() {
+              if (document.getElementById('password-again').value == "") {
+                  alert("Bạn chưa nhập Mật Khẩu mời bạn nhập vào");
+              }
+          })
+          $(".login_button").click(function(){
+                  alert("Đăng ký thành công");
+          })
+      })
+      $(document).ready(function(){
+        $("input").focus(function(){
+          $(this).css("background-color", "white");
+        });
+        $("input").blur(function(){
+          $(this).css("background-color", "white");
+        });
+      });
+  </script>
+    <div class="container">
+      <div id="header">
+        <div class="toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="header1">
+          <a href="./index.html" id="logo">
+            <img src="./IMAGE/LogoDT.png" alt="Logo" width="50" />
+          </a>
+          <ul id="menu">
+            <li><a href="./index.html">TRANG CHỦ</a></li>
+            <li class="menuson">
+              <a href="">
+                ÁO
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul id="dropmenu">
+                <li><a href="./PageAoThun.html">Áo Thun</a></li>
+                <li><a href="./PageSoMi.html">Sơ mi</a></li>
+                <li><a href="./PageSweater.html">Sweater</a></li>
+                <li><a href="./PageCroptop.html">Croptop</a></li>
+              </ul>
+            </li>
+
+            <li class="menuson">
+              <a href="">
+                ÁO KHOÁC
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul id="dropmenu">
+                <li><a href="./PageJacket.html">Jacket</a></li>
+                <li><a href="./PageHoddie.html">Hoodie</a></li>
+                <li><a href="./PageCardigan.html">Cardigan</a></li>
+                <li><a href="./PageBlaze.html">Blaze</a></li>
+              </ul>
+            </li>
+            <li class="menuson">
+              <a href="">
+                QUẦN
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul id="dropmenu">
+                <li><a href="./PageQuanDai.html">Quần Dài</a></li>
+                <li><a href="./PageQuanShort.html">Quần Short</a></li>
+                <li><a href="./PageQuanJean.html">Quần Jean</a></li>
+                <li><a href="./PageVay.html">Váy</a></li>
+              </ul>
+            </li>
+            <li><a href="./PagePhuKien.html">PHỤ KIỆN</a></li>
+            <li><a href="">LIÊN HỆ</a></li>
+          </ul>
+        </nav>
+        <input class="search" type="text" size="12" />
+        <div class="icon">
+          <a href="" class="icon1"
+            ><i class="fa-solid fa-magnifying-glass"></i> &nbsp;</a
+          >
+          <a href="./Login.html" class="icon2"
+            ><i class="fa-solid fa-user"></i> &nbsp; &nbsp;</a
+          >
+          <a href="./giohang.html" class="icon3"
+            ><i class="fa-solid fa-baby-carriage"></i> &nbsp; &nbsp;</a
+          >
+        </div>
+      </div>
+      <br />
+      <div id="s1">
+        <a href="./index.html">Trang Chủ ></a>
+        <a href="./SignUp.html" class="s1">Đăng ký</a>
+      </div>
+      <div class="login">
+        <div class="login_title">
+          <h1>Đăng ký</h1>
+          <br /><br /><br /><br /><br />
+        </div>
+        <div class="login_box">
+          <form>
+            <input type="text" placeholder="Họ" required /> <br />
+            <input type="text" placeholder="Tên" required /> <br />
+            <div class="user">
+              <input id="user-id" class="user" type="text" placeholder="Tài khoản" required /> <br />
+            </div>
+            <div class="password">
+              <input id="password-id" class="password" type="password" placeholder="Mật khẩu" required> <br>
+            </div>
+            <div class="password1">
+              <input id="password-again" class="password1" type="password" placeholder="Xác nhận mật khẩu" required> <br>
+            </div>
+            <div class="test">
+              <div class="login_button">
+                <input id="submit" type="submit" value="Đăng Ký" />
+              </div>
+              <div class="login_next">
+                <a href="">Quên mật khẩu?</a> <br />
+                <span>hoặc</span>
+                <a href="./Login.html">Đăng nhập</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="GT">
+          <h2>Giới Thiệu</h2>
+          MG trang web kinh doanh đồ thời trang <br />
+          Tác giả: <br />
+          Võ Ngọc Minh An (Nhóm trưởng)<br />
+          Hoàng Đức Huệ<br />
+          Nguyễn Thanh Tuấn<br />
+          Lê Đức Trung Anh<br />
+          Nguyễn Lê Mỹ Châu<br />
+          Nguyễn Hậu Duệ<br />
+        </div>
+
+        <div class="CS">
+          <h2>Chính Sách</h2>
+          <a href="">Chính sách bảo mật <br /></a>
+          <a href="">Chính sách hoàn tiền <br /></a>
+          <a href="">Thanh Toán và vận chuyển <br /></a>
+          <a href="">Chính sách bảo hành</a>
+        </div>
+
+        <div class="LH">
+          <h2>Liên Hệ</h2>
+          <i class="fa-solid fa-location-dot"></i>
+          Địa chỉ: 12 Nguyễn Văn Bảo, Phường 4, <br />
+          Gò Vấp, Thành phố Hồ Chí Minh <br />
+          <i class="fa-solid fa-phone"></i>
+          Hỗ trợ / Mua hàng: 0902971755 <br />
+          <i class="fa-solid fa-paper-plane"></i>
+          Mail: iuh@gmail.com
+        </div>
+
+        <div class="CĐ">
+          <h2>Cộng Đồng</h2>
+          <a href=""><i class="fa-brands fa-facebook"></i> &nbsp;</a>
+          <a href=""><i class="fa-brands fa-instagram"></i>&nbsp;</a>
+          <a href=""><i class="fa-brands fa-tiktok"></i>&nbsp;</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

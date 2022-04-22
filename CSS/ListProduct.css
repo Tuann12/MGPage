@@ -1,0 +1,362 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+#header{
+    z-index: 1;
+    background-color: rgba(12, 12, 12);    
+    position: fixed;
+    width: 100%;
+}
+
+.header1{
+    max-width: 960px;
+    margin: 0px auto;
+    display: flex;
+}
+#logo{
+    padding: 5px 0px;
+}
+#logo img{
+    position: absolute;
+    max-width: 50px;
+    height: auto;
+    display: block;
+    left: 70px;
+}
+#menu{
+    z-index: 1;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li{
+    font-weight: bold;
+    display: block;
+    padding: 0 15px;
+}
+
+#menu li a{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none; 
+    color: rgb(255, 255, 255);
+    padding: 18px 20px;
+    display: block;
+}
+.search{
+    position: absolute;
+    right: 120px;
+    top: 17px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.icon{
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+.icon a{
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+}
+.icon1:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);;
+}
+.icon2:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);;
+}
+.icon3:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+#dropmenu{  
+    background-color: rgb(12, 12, 12);
+    display: none;
+    position: absolute; 
+    
+}
+li a:hover{
+    background-color: rgb(12, 12, 12);
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+.menuson:hover #dropmenu{
+    display: block;
+}
+.slider{
+    display: block;
+    padding: 50px 0;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider_img {
+    display: flex;
+    
+}
+.slider_img img{
+    width: 100%;
+}
+.slider_img input{
+    display: none;
+}
+.lableslider{
+    display: flex;
+    justify-content: center;
+}
+.lableslider label{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 2px;
+
+}
+.lableslider label:hover{
+    background-color: rgb(34, 34, 34);
+}
+#img1:checked ~ .imgslider1{
+    margin-right: -100%;
+}
+#img2:checked ~ .imgslider2{
+    margin-right: -200%;
+}
+#img3:checked ~ .imgslider3{
+    margin-right: -300%;
+}
+#img4:checked ~ .imgslider4{
+    margin-right: -400%;
+}
+#img5:checked ~ .imgslider5{
+    margin-right: -500%;
+}
+.title1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    position: relative;
+    line-height: 60px;
+    color: rgb(17, 17, 17);
+    margin: 0px auto 80px;
+    padding-left: 50px;
+    
+}
+
+#product{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding-bottom: 100px;
+
+}
+#product2{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding: 100px 1px;
+
+}
+.sp1{
+    margin-left: 10px;
+    width: 30%;
+    
+}
+.sp1 a{
+    text-decoration: none;
+}
+.sp1 img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.sp1 img:hover{
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.sp2{
+    margin-left: 10px;
+    width: 30%;
+    height: 100%;
+}
+.sp2 a{
+    text-decoration: none;
+}
+.sp2 img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    
+    
+}
+.sp2 img:hover{
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.titleAo{
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.price{
+    text-align: center;
+}
+
+
+#s1{
+    width: 100%;
+    font-size: 20px;
+    padding-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px;
+    padding: 10px;
+    background-color: rgb(238, 236, 236);
+}
+.s1{
+    opacity: 0.5;
+}
+
+#s1 a{
+    color: black;
+    text-decoration: none
+}
+
+#s2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 80px;
+    margin-bottom: 20px;
+}
+
+
+#style{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#left{
+    width: 23%;
+    height: 100%;
+    padding: 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 0;
+    
+    
+}
+
+.img-sociallas {
+    width: 50px;
+}
+.img-sociallas a{
+    text-decoration: none;
+}
+
+#left input{
+    padding: 10px 10px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#left button{
+    padding: 10px 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:12px;
+    background-color: #000;
+    border: 2px solid #0000;
+    outline: whitesmoke solid 2px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#left button:hover{
+    background-color: white;
+    color: black;
+    outline: black solid 2px
+}
+
+#right{
+    width: 80%;
+    float: right;
+}
+
+#right select{
+    padding: 10px 10px;
+   margin-left: 0px;
+}
+
+#footer{
+    width: 100%;
+    position: absolute;
+    top: 160%;
+    text-transform: capitalize;
+    line-height: 30px;
+    justify-content: center;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.GT{
+    display: block;
+    padding: 20px 25px;
+}
+.GT h2{
+    display: block;
+    padding: 20px 0px;
+}
+.CS{
+    display: block;
+    padding: 20px 25px;
+}
+.CS a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.CS a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.CS h2{
+    display: block;
+    padding: 20px 0px;
+}
+.LH{
+    display: block;
+    padding: 20px 25px;
+}
+.LH h2{
+    display: block;
+    padding: 20px 0px;
+}
+.CĐ{
+    display: block;
+    padding: 20px 25px;
+}
+.CĐ a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.CĐ a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.CĐ h2{
+    display: block;
+    padding: 20px 0px;
+}

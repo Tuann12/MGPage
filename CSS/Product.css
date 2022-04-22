@@ -1,0 +1,495 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#header{
+    z-index: 1;
+    background-color: rgba(12, 12, 12);    
+    position: fixed;
+    width: 100%;
+}
+
+.header1{
+    
+    max-width: 1000px;
+    margin: 0px auto;
+    display: flex;
+}
+#logo{
+    padding: 5px 0px;
+}
+#logo img{
+    position: absolute;
+    max-width: 50px;
+    height: auto;
+    display: block;
+    left: 70px;
+}
+#menu{
+    z-index: 1;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li{
+    font-weight: bold;
+    display: block;
+    padding: 0 15px;
+}
+
+#menu li a{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none; 
+    color: rgb(255, 255, 255);
+    padding: 18px 20px;
+    display: block;
+}
+.search{
+    position: absolute;
+    right: 120px;
+    top: 17px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.icon{
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+.icon a{
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+}
+.icon1:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);;
+}
+.icon2:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);;
+}
+.icon3:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+#dropmenu{  
+    background-color: rgb(12, 12, 12);
+    display: none;
+    position: absolute; 
+    
+}
+li a:hover{
+    background-color: rgb(12, 12, 12);
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+.menuson:hover #dropmenu{
+    display: block;
+}
+.slider{
+    display: block;
+    padding: 50px 0;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider_img {
+    display: flex;
+    
+}
+.slider_img img{
+    width: 100%;
+}
+.slider_img input{
+    display: none;
+}
+.lableslider{
+    display: flex;
+    justify-content: center;
+}
+.lableslider label{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 2px;
+
+}
+.lableslider label:hover{
+    background-color: rgb(34, 34, 34);
+}
+#img1:checked ~ .imgslider1{
+    margin-right: -100%;
+}
+#img2:checked ~ .imgslider2{
+    margin-right: -200%;
+}
+#img3:checked ~ .imgslider3{
+    margin-right: -300%;
+}
+#img4:checked ~ .imgslider4{
+    margin-right: -400%;
+}
+#img5:checked ~ .imgslider5{
+    margin-right: -500%;
+}
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+    color: rgb(17, 17, 17);
+    margin: 0px auto 80px;
+}
+.title::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    background: rgb(17, 17, 17);
+    border-radius: 5px;
+}
+#product{
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+#product2{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding: 100px 1px;
+
+}
+.sp1{
+    margin-left: 10px;
+    width: 30%;
+    
+}
+.sp1 a{
+    text-decoration: none;
+}
+.sp1 img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.sp1 img:hover{
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.sp2{
+    margin-left: 10px;
+    width: 30%;
+    height: 100%;
+}
+.sp2 a{
+    text-decoration: none;
+}
+.sp2 img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    
+    
+}
+.sp2 img:hover{
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.titleAo{
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#footer{
+    text-transform: capitalize;
+    line-height: 30px;
+    justify-content: center;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.GT{
+    display: block;
+    padding: 20px 25px;
+}
+.GT h2{
+    display: block;
+    padding: 20px 0px;
+}
+.CS{
+    display: block;
+    padding: 20px 25px;
+}
+.CS a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.CS a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.CS h2{
+    display: block;
+    padding: 20px 0px;
+}
+.LH{
+    display: block;
+    padding: 20px 25px;
+}
+.LH h2{
+    display: block;
+    padding: 20px 0px;
+}
+.CĐ{
+    display: block;
+    padding: 20px 25px;
+}
+.CĐ a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.CĐ a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.CĐ h2{
+    display: block;
+    padding: 20px 0px;
+}
+#s1{
+    width: 100%;
+    font-size: 20px;
+    padding-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px;
+    padding: 10px;
+    background-color: rgb(238, 236, 236);
+}
+.s1{
+    opacity: 0.5;
+}
+
+#s1 a{
+    color: black;
+    text-decoration: none
+}
+.banner{
+    display: block;
+    padding: 30px 0px;
+    margin: 0px auto;
+    line-height: 50px;
+}
+.menu{
+    width: 100%;
+    height: 150px;
+    
+}
+.banner{
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+}
+.price1{
+    
+    margin-bottom: -20px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.price1 del{
+    font-weight: normal;
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.left{
+    width: 500px;
+    right: 500px;
+    
+    
+}
+.right{
+    width: 500px;
+    right: 500px;
+    
+    
+}
+#ao1{
+    width: 240px;
+    height: 240px;
+}
+.cmt{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 0px 20px;
+    margin-top: -10px;
+    margin-bottom: -15px;
+} 
+
+.mau1{
+    padding: 10px;
+    margin: auto;
+}
+.small{
+    display: block;
+    padding: 10px;
+}
+
+
+.size{
+    margin-top: -15px;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.amount{
+    display: flex;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+.quantity{
+    margin: 10px 0px 0px 20px;
+    width: 30px;
+    height: 30px;
+}
+.add{
+    width: 150px;
+    height: 50px;
+    margin: 20px 15px 0px 20px;
+    color: whitesmoke;
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+.buynow{
+    width: 150px;
+    height: 50px;
+    color: black;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    
+}
+.add:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.buynow:hover{
+    transition: all 0.3s ease;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.suggest{
+
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 50px 0 30px 0;
+    text-align:center
+}
+.title::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    background: rgb(17, 17, 17);
+    border-radius: 5px;
+}
+
+.box{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 15px;
+    margin: 0px 0px 10px 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid rgb(202, 202, 202);
+}
+.box:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid black(202, 202, 202);
+}
+.mota{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 20px;
+}
+#footer{
+    margin-top: 60px;
+    text-transform: capitalize;
+    line-height: 30px;
+    justify-content: center;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.GT{
+    display: block;
+    padding: 20px 25px;
+}
+.GT h2{
+    display: block;
+    padding: 20px 0px;
+}
+.CS{
+    display: block;
+    padding: 20px 25px;
+}
+.CS a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.CS a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.CS h2{
+    display: block;
+    padding: 20px 0px;
+}
+.LH{
+    display: block;
+    padding: 20px 25px;
+}
+.LH h2{
+    display: block;
+    padding: 20px 0px;
+}
+.CĐ{
+    display: block;
+    padding: 20px 25px;
+}
+.CĐ a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.CĐ a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.CĐ h2{
+    display: block;
+    padding: 20px 0px;
+}

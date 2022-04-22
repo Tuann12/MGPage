@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/ListProduct.css">
+    <script src="https://kit.fontawesome.com/6cd12173d5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      $(".toggle").click(function () {
+        $(".header1").slideToggle();
+      });
+    });
+  </script>
+    <title>Quần Jean</title>
+</head>
+
+<body>
+    <div id="container">
+      <div id="header">
+        <div class="toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="header1">
+          <a href="./index.html" id="logo">
+            <img src="./IMAGE/LogoDT.png" alt="Logo" width="50" />
+          </a>
+          <ul id="menu">
+            <li><a href="./index.html">TRANG CHỦ</a></li>
+            <li class="menuson">
+              <a href="">
+                ÁO
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul id="dropmenu">
+                <li><a href="./PageAoThun.html">Áo Thun</a></li>
+                <li><a href="./PageSoMi.html">Sơ mi</a></li>
+                <li><a href="./PageSweater.html">Sweater</a></li>
+                <li><a href="./PageCroptop.html">Croptop</a></li>
+              </ul>
+            </li>
+
+            <li class="menuson">
+              <a href="">
+                ÁO KHOÁC
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul id="dropmenu">
+                <li><a href="./PageJacket.html">Jacket</a></li>
+                <li><a href="./PageHoddie.html">Hoodie</a></li>
+                <li><a href="./PageCardigan.html">Cardigan</a></li>
+                <li><a href="./PageBlaze.html">Blaze</a></li>
+              </ul>
+            </li>
+            <li class="menuson">
+              <a href="">
+                QUẦN
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul id="dropmenu">
+                <li><a href="./PageQuanDai.html">Quần Dài</a></li>
+                <li><a href="./PageQuanShort.html">Quần Short</a></li>
+                <li><a href="./PageQuanJean.html">Quần Jean</a></li>
+                <li><a href="./PageVay.html">Váy</a></li>
+              </ul>
+            </li>
+            <li><a href="./PagePhuKien.html">PHỤ KIỆN</a></li>
+            <li><a href="">LIÊN HỆ</a></li>
+          </ul>
+        </nav>
+        <input class="search" type="text" size="12" />
+        <div class="icon">
+          <a href="" class="icon1"
+            ><i class="fa-solid fa-magnifying-glass"></i> &nbsp;</a
+          >
+          <a href="./Login.html" class="icon2"
+            ><i class="fa-solid fa-user"></i> &nbsp; &nbsp;</a
+          >
+          <a href="./giohang.html" class="icon3"
+            ><i class="fa-solid fa-baby-carriage"></i> &nbsp; &nbsp;</a
+          >
+        </div>
+      </div>
+        <div>
+            <div id="s2">
+                Quần Jean
+            </div>
+            <div id="s1">
+                <a href="./index.html">Trang Chủ ></a>
+                <a href="./PageQuanJean.html" class="s1">Quần Jean</a>
+            </div>
+        </div>
+        <div id="left">
+            <div style="border: rgb(12, 12, 12) 1px solid; padding: 10px; font-size: 20px;">
+                <div style="margin-bottom: -30px;">
+                    <h1 style="font-size: 40px;">MG SHOP</h1><br> <br>
+                </div>
+
+                <div>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="./IMAGE/fb.png" class="img-sociallas"
+                            alt="fashion&styleFB">
+                    </a> Facebook<br> <br>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="./IMAGE/instagram.png"
+                            class="img-sociallas" alt="Ins">
+                    </a>Instagram <br>
+                </div>
+
+                <div>
+                    <img src="./IMAGE/messlogo.png" class="img-sociallas" alt="tuvan"> Tư Vấn Online <br> <br>
+                </div>
+
+                <div style="position: relative;">
+                    <form action="">
+                        <p style="margin-bottom: 5px;">Đăng ký nhận tin</p>
+                        <input required="" type="email" value="" placeholder="Nhập email của bạn" name="nhapemail"
+                            aria-label="Email Address">
+                        <button type="submit">Đăng kí</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="right">
+            <div id="content">
+
+                <h2 class="title1">
+
+                    Quần Jean<br>
+                    <select class="sort-by custom-dropdown__select">
+
+                        <option value="manual">Sản phẩm nổi bật</option>
+
+                        <option value="price-ascending" data-filter="&amp;sortby=(price:product=asc)">Giá: Tăng dần
+                        </option>
+                        <option value="price-descending" data-filter="&amp;sortby=(price:product=desc)">Giá: Giảm dần
+                        </option>
+                        <option value="title-ascending" data-filter="&amp;sortby=(title:product=asc)">Tên: A-Z</option>
+                        <option value="title-descending" data-filter="&amp;sortby=(price:product=desc)">Tên: Z-A
+                        </option>
+                        <option value="created-ascending" data-filter="&amp;sortby=(updated_at:product=desc)">Cũ nhất
+                        </option>
+                        <option value="created-descending" data-filter="&amp;sortby=(updated_at:product=asc)">Mới nhất
+                        </option>
+                        <option value="best-selling" data-filter="&amp;sortby=(sold_quantity:product=desc)">Bán chạy
+                            nhất</option>
+                        <option value="quantity-descending">Tồn kho: Giảm dần</option>
+                    </select>
+                </h2>
+            </div>
+            <div id="product">
+                <div class="sp1">
+                    <a href=""><img src="./IMAGE/QuanDaiXam.webp"></a>
+                    <div class="titleAo">QJ074 - QUẦN JEAN BAGGY NỮ ỐNG RỘNG XÁM KHÓI - 5161</div>
+                    <div class="price"><del>200.000đ</del> 169.000đ</div>
+                </div>
+                <div class="sp1">
+                    <a href=""><img src="./IMAGE/QuanDaiBaggy.webp"></a>
+                    <div class="titleAo">QJ076 - QUẦN JEAN BAGGY NỮ ỐNG RỘNG LOANG MÀU</div>
+                    <div class="price"><del>230.000đ</del> 190.000đ</div>
+                </div>
+                <div class="sp1">
+                    <a href=""><img src="./IMAGE/QuanDaiXam2.webp"></a>
+                    <div class="titleAo">QJ021 - QUẦN JEAN BAGGY NỮ NÂU XÁM</div>
+                    <div class="price"><del>250.000đ</del> 230.000đ</div>
+                </div>
+            </div>
+
+               
+        </div>
+
+        <div id="footer">
+            <div class="GT">
+                <h2>Giới Thiệu</h2>
+                MG trang web kinh doanh đồ thời trang <br>
+                Tác giả: <br>
+                Võ Ngọc Minh An (Nhóm trưởng)<br>
+                Hoàng Đức Huệ<br>
+                Nguyễn Thanh Tuấn<br>
+                Lê Đức Trung Anh<br>
+                Nguyễn Lê Mỹ Châu<br>
+                Nguyễn Hậu Duệ<br>
+            </div>
+
+            <div class="CS">
+                <h2>Chính Sách</h2>
+                <a href="">Chính sách bảo mật <br></a>
+                <a href="">Chính sách hoàn tiền <br></a>
+                <a href="">Thanh Toán và vận chuyển <br></a>
+                <a href="">Chính sách bảo hành</a>
+            </div>
+
+            <div class="LH">
+                <h2>Liên Hệ</h2>
+                <i class="fa-solid fa-location-dot"></i>
+                Địa chỉ: 12 Nguyễn Văn Bảo, Phường 4, <br>
+                Gò Vấp, Thành phố Hồ Chí Minh <br>
+                <i class="fa-solid fa-phone"></i>
+                Hỗ trợ / Mua hàng: 0902971755 <br>
+                <i class="fa-solid fa-paper-plane"></i>
+                Mail: iuh@gmail.com
+            </div>
+            <div class="CĐ">
+                <h2>Cộng Đồng</h2>
+                <a href=""><i class="fa-brands fa-facebook"></i> &nbsp;</a>
+                <a href=""><i class="fa-brands fa-instagram"></i>&nbsp;</a>
+                <a href=""><i class="fa-brands fa-tiktok"></i>&nbsp;</a>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
